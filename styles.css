@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.hero-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/quest-hero-background.png');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.hero-logo {
+    width: 100%;
+    max-width: 100000px;
+    height: auto;
+}
+
+.home-main-content {
+    position: relative;
+    z-index: 2;
+    margin-top: 100vh;
+    background-color: #ffffff;
+    padding: 60px 20px;
+    min-height: 100vh;
+    color: #1a1a1a;
+}
+
+@font-face {
+    font-family: 'FredokaCanva';
+    src: url('fonts/Fredoka-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+#diffheadtemp {
+    font-family: 'FredokaCanva', sans-serif;
+    font-weight: 700;
+}
