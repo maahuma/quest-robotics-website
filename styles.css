@@ -102,8 +102,9 @@
 #abt_grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    margin-bottom: 16px;
+    grid-auto-rows: min-content;
+    /*grid-template-rows: repeat(2, 1fr);*/
+    margin-bottom: 45px;
     justify-content: center;
 }
 
@@ -128,4 +129,43 @@
 #abtf:hover, #abtm:hover, #abtc:hover {
     transform: translateY(-8px);
     box-shadow: var(--cyan-glow);
+}
+
+#diff {
+    padding-left: 20px;
+    .highlight {
+        color: #ffb331;
+        font-weight: bold;
+        transition: text-shadow 0.3s ease;
+    }
+
+    .highlight:hover {
+        text-shadow: var(--orange-glow);
+    }
+
+    li {
+        font-family: 'CanvaSans', 'sans-serif';
+        margin: 15px 0;
+        .item_head {
+            font-size: 20px !important;
+            .glow {
+                color: #01a6bd;
+                font-weight: bold;
+                transition: text-shadow 0.3s ease;
+            }
+
+            .glow:hover {
+                text-shadow: var(--cyan-glow);
+            }
+        }
+        p {
+            margin-top: 10px;
+        }
+    }
+}
+
+#diffheadtemp {
+    font-family: 'LeagueSpartan', 'sans-serif';
+    font-size: 30px;
+    margin-bottom: 10px;
 }
