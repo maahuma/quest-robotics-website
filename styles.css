@@ -47,6 +47,48 @@
     height: auto;
 }
 
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #01a6bd;
+    z-index: 1000;
+    margin-bottom: 40px;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: end;
+    padding: 15px 20px;
+}
+
+.nav_links {
+    display: flex;
+    gap: 40px;
+
+
+    a {
+        display: block;
+        color: var(--text-color);
+        text-decoration: none;
+        font-family: 'FredokaCanva', 'sans-serif';
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+}
+
+.nav_links a:hover {
+    text-shadow: var(--orange-glow);
+}
+
+.nav_links a.active {
+    text-shadow: 0 0 10px var(--bg-color), 0 0 20px var(--bg-color);
+}
+
 .home-main-content {
     position: relative;
     z-index: 2;
